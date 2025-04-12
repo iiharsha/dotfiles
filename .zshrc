@@ -60,11 +60,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # Syntax highlighting
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+# ON git clone
+# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#
+# from package install
+# ZSH plugins (installed via dnf)
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -116,6 +119,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Other paths
 export PATH="$HOME/.local/share:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
