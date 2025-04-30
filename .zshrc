@@ -68,7 +68,6 @@ source $ZSH/oh-my-zsh.sh
 # ZSH plugins (installed via dnf)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -102,7 +101,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias "vim"="nvim"
+alias "nim"="nvim"
 alias "cls"="clear"
 alias "nrd"="npm run dev"
 alias "emt"="emacsclient -nw"
@@ -110,6 +109,9 @@ alias "emt"="emacsclient -nw"
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
 export PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
+
+# Add dart binary path
+export PATH="$PATH:$HOME/dart/dart-sdk/bin"
 
 
 # Bun setup
@@ -120,6 +122,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.local/share:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+#SDKMAN
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
 # Bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
