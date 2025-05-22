@@ -1,13 +1,13 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Hack Nerd Font";
     font-size: 12px;
     transition: background-color .3s ease-out;
 }
 
-window#waybar {
-    background: rgba(18,18,18, 0.75);
-    color: #b5b5b5;
+#waybar {
+    background: transparent;
+    color: #c6d0f5;
     font-family:
         "Hack Nerd Font", Feather;
     transition: background-color .5s;
@@ -18,7 +18,7 @@ window#waybar {
 .modules-right
 {
     background: rgba(5, 5, 5, .7);
-    margin: 5px 10px;
+    margin: 5px 5px;
     padding: 0 5px;
     border-radius: 5px;
 }
@@ -67,6 +67,7 @@ window#waybar {
 #idle_inhibitor:hover,
 #scratchpad:hover,
 #power-profiles-daemon:hover,
+#custom-lock,
 #language:hover,
 #mpd:hover {
     background: rgba(23, 23, 23, 0.9);

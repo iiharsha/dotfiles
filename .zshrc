@@ -105,6 +105,7 @@ alias "nim"="nvim"
 alias "cls"="clear"
 alias "nrd"="npm run dev"
 alias "emt"="emacsclient -nw"
+alias "cd"="z"
 # Add Go binary path
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
@@ -129,3 +130,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # Bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
+eval "$(zoxide init zsh)"
+alias "tm"="tmux-sessionizer"
+
+# bun completions
+[ -s "/home/theharsha/.bun/_bun" ] && source "/home/theharsha/.bun/_bun"

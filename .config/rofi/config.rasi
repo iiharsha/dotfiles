@@ -3,7 +3,7 @@
  *******************************************************************************/
 
 * {
-	background-color:           #000000;      /* Black background */
+	background-color:           #121212;      /* Black background */
 	text-color:                 #ffffff;      /* White text */
 	selbg:                      #e0e0e0;      /* Light gray for selected background */
 	actbg:                      #e0e0e0;      /* Active background */
@@ -31,6 +31,8 @@
 configuration {
     modi: "combi,run,drun,window";
     combi-modi: "drun,run";
+    show-icons: true;
+    icon-theme: "Arc-X-D";
 }
 
 
